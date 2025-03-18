@@ -5,21 +5,21 @@
 class Quay < Formula
   desc "quay is a CLI tool designed to manage and filter Docker Compose services."
   homepage "https://github.com/yarlson/quay"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/quay/releases/download/0.1.0/quay_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0d3bcefd47dae8dfc1c657682ab2e3a9e45bbd761f6888d1ff909f8ab7192b05"
+      url "https://github.com/yarlson/quay/releases/download/0.2.0/quay_0.2.0_darwin_amd64.tar.gz"
+      sha256 "3108c4e665b6fcefe2865f759e6be32f6f57a78889110bb0d95647de2be46dc0"
 
       def install
         bin.install "quay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/quay/releases/download/0.1.0/quay_0.1.0_darwin_arm64.tar.gz"
-      sha256 "619c0789c2fa70211aec02496347b3cbd4db512f23186168b3fa70fbca38b36c"
+      url "https://github.com/yarlson/quay/releases/download/0.2.0/quay_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f8f927d8c95438c9a9f3e4f13787efeeb0dbcdd745f859633515a2d101fe1c5f"
 
       def install
         bin.install "quay"
@@ -30,8 +30,8 @@ class Quay < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yarlson/quay/releases/download/0.1.0/quay_0.1.0_linux_amd64.tar.gz"
-        sha256 "545b3f2360f611ca8ee8287b528e69b692cd91f24c49036cf1e7dc88f3e53b28"
+        url "https://github.com/yarlson/quay/releases/download/0.2.0/quay_0.2.0_linux_amd64.tar.gz"
+        sha256 "bc7210d367d19750137d07aba59124e8f58e985d06d46ebc3c6b8a5de93e08ef"
 
         def install
           bin.install "quay"
@@ -40,8 +40,8 @@ class Quay < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yarlson/quay/releases/download/0.1.0/quay_0.1.0_linux_arm64.tar.gz"
-        sha256 "5723f8c53528648ee00374d93e9c3aa1e3230f65d32f4d0d74645a86f90c6cbc"
+        url "https://github.com/yarlson/quay/releases/download/0.2.0/quay_0.2.0_linux_arm64.tar.gz"
+        sha256 "3efef8c0431139feff0a79a5ff699235eeadb8a65e6d13e037f8fa0525e3a60a"
 
         def install
           bin.install "quay"
